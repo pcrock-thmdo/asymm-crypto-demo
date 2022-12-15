@@ -1,0 +1,3 @@
+# Put all the identities of the people you know in this file in the following format:
+your.email@example.com YOUR_PUBLIC_SSH_KEY_HERE
+another.email@example.com SOMEONE_ELSES_PUBLIC_SSH_KEY_HERE
