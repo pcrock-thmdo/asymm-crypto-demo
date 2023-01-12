@@ -13,6 +13,7 @@ readonly RECIPIENT_PUB_KEY_PATH="${1}"
 
 test -f .env || panic "You haven't created your .env file yet"
 
+# shellcheck disable=1091
 source .env
 
 rm -Rf .temp
