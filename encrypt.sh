@@ -7,7 +7,7 @@ panic() {
     exit 1
 }
 
-test "${#}" -ge 1 || panic "Usage: encrypt.sh [RECIPIENT_PUB_KEY_PATH]"
+test "${#}" -ge 1 || panic "Usage: ./encrypt.sh [RECIPIENT_PUB_KEY_PATH]"
 
 readonly RECIPIENT_PUB_KEY_PATH="${1}"
 
@@ -21,6 +21,9 @@ rm -Rf .temp
 mkdir -p .temp
 
 # Save plaintext user input to a file
+echo "
+Enter message and press Ctrl + D when finished:
+"
 cat > .temp/plaintext
 
 # Encrypt plaintext with recipient's public key and save into a ciphertext file
