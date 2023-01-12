@@ -1,9 +1,11 @@
 # Asymmetric Cryptography Demo
 
-Work in progress.
+Demonstrates how asymmetric cryptography works using basic CLI tools.
 
-Demonstrates how asymmetric cryptography works using basic CLI tools. Specifically, it uses SSH keys which you
-_probably_ already have configured on your dev machine.
+* [Age](https://github.com/FiloSottile/age) is used for encrypting and decrypting.
+* `ssh-keygen` is used for creating and verifying signatures.
+
+The keys we'll be using in this demo are your already-existing SSH keys.
 
 ## Getting Started
 
